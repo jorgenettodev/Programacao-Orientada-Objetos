@@ -20,6 +20,7 @@ public class App {
         StandUp standUp = new StandUp("É de mim mesmo", "Piauí", "xx/xx/2024", "Whindersson Nunes");
         standUp.exibirInformacoes();
         standUp.comecarEvento("Piada de pobre x rico");
+        standUp.comecarEvento();
 
     }
 }
