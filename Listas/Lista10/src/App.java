@@ -18,10 +18,10 @@ public class App {
 
         // locadora
         Locadora locadora = new Locadora();
-        // locadora.adicionarItem(jogo);
+        locadora.adicionarItem(jogo);
         locadora.adicionarItem(filme1);
 
         // locadora.listarItens();
-        locadora.buscarItem("Interestelar");
+        locadora.buscarItem("Ilha do medo");
     }
 }

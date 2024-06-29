@@ -19,10 +19,17 @@ public class Locadora<T extends AudioVisual> {
     }
 
     public void buscarItem(String titulo) {
+        boolean foiEncontrado = false;
+
         for (T item: acervo) {
-            if (((Filme) item).getTitulo().contains(titulo)) {
-                System.out.println(String.format("O item %s foi encotrado",((Filme) item).getTitulo()));
-            }
+            if (item.getTitulo().contains(titulo)) {
+                foiEncontrado = true;
+            } 
+        }
+        if (foiEncontrado) {
+            System.out.println("O titulo foi encontrado");
+        } else {
+            System.out.println("Titulo não encontrado");
         }
     }
 
