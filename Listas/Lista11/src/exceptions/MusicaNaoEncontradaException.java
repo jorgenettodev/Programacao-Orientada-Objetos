@@ -1,6 +1,6 @@
 package exceptions;
 
-public class MusicaNaoEncontradaException extends RuntimeException {
+public class MusicaNaoEncontradaException extends Exception {
     public MusicaNaoEncontradaException() {
         super("Musica não encontrada");
     }

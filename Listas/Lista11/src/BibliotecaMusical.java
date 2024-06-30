@@ -19,8 +19,16 @@ public class BibliotecaMusical extends MusicaNaoEncontradaException {
         if (musica == null) {
             throw new MusicaNaoEncontradaException();
         }
-        
+
         System.out.println("Titulo encontrado");
         System.out.println(musica);
+    }
+
+    public void setAcervo(Map<String, Musica> acervo) {
+        this.acervo = acervo;
+    }
+
+    public Map<String, Musica> getAcervo() {
+        return this.acervo;
     }
 }

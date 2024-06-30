@@ -8,15 +8,15 @@ public class App {
         BibliotecaMusical biblioteca = new BibliotecaMusical();
         biblioteca.adicionarMusica(musica.getTitulo(), musica);
         biblioteca.adicionarMusica(musica2.getTitulo(), musica2);
-        
+
         biblioteca.listarMusicas();
 
-
         // biblioteca.buscarMusica("Leave out all the rest");
+
         try {
             biblioteca.buscarMusica("in the end");
         } catch (MusicaNaoEncontradaException e) {
             System.out.println(e.getMessage());
         }
-        }
+    }
 }
