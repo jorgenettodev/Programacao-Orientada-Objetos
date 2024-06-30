@@ -22,6 +22,8 @@ public class App {
         locadora.adicionarItem(filme1);
 
         // locadora.listarItens();
-        locadora.buscarItem("Interestelar");
+        // locadora.buscarItem("Interestelar");
+        locadora.buscarItem("Life is Strange");
+        locadora.buscarItem("Life is Strange 2");
     }
 }
