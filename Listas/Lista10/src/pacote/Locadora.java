@@ -22,10 +22,22 @@ public class Locadora<T extends AudioVisual> {
         boolean foiEncontrado = false;
 
         for (T item: acervo) {
-            if (item.getTitulo().contains(titulo)) {
+            if (item instanceof Filme) {
+                Filme filme = (Filme) item;
+                if (filme.getTitulo().contains(titulo)) {
+                    foiEncontrado = true;
+                }
+            }
+
+           if (item instanceof Jogo) {
+            Jogo jogo = (Jogo) item;
+            if (jogo.getTitulo().equalsIgnoreCase(titulo)) {
                 foiEncontrado = true;
-            } 
+            }
+           }
         }
+
+
         if (foiEncontrado) {
             System.out.println("O titulo foi encontrado");
         } else {

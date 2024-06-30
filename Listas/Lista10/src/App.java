@@ -22,6 +22,6 @@ public class App {
         locadora.adicionarItem(filme1);
 
         // locadora.listarItens();
-        locadora.buscarItem("Ilha do medo");
+        locadora.buscarItem("Interestelar");
     }
 }
