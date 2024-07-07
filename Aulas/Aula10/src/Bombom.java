@@ -14,5 +14,10 @@ public class Bombom {
     public String getNome() {
         return this.nome;
     }
+
+    @Override
+    public String toString() {
+        return this.getNome();
+    }
 }
 

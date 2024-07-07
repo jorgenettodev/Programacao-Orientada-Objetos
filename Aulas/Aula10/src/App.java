@@ -13,11 +13,8 @@ public class App {
         Bombom bombom2 = new Bombom("Sonho de valsa");
         bombons.add(bombom2);
         
-        // procura bombom
         for (Bombom bombomDaCaixa : bombons) {
-            if (bombomDaCaixa.getNome().equalsIgnoreCase("Sddd")) {
-                System.out.println("Bambaum encontrado");
-            }
+            System.out.println(bombomDaCaixa);
         }
 
     }
